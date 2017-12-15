@@ -28,16 +28,24 @@ const populateList = function(countries) {
     const liName = document.createElement('li')
     liName.innerText = country.name
 
-    const linebreak = document.createElement("br");
+    const liCapital = document.createElement('li')
+    liCapital.innerText = country.capital
+
+    const liPopulation = document.createElement('li')
+    liPopulation.innerText = country.population
 
     const liCallingCodes = document.createElement('li')
     liCallingCodes.innerText = country.callingCodes
 
-
-    ul.appendChild(linebreak);
+    const linebreak = document.createElement("br");
 
     ul.appendChild(liName);
+    ul.appendChild(liCapital);
+    ul.appendChild(liPopulation)
     ul.appendChild(liCallingCodes);
+
+
+    ul.appendChild(linebreak);
   })
 
 }
